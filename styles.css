@@ -1,31 +1,144 @@
 /* styles.css */
+
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
+    margin: 20px;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-main {
-    padding: 20px;
+.container {
     max-width: 800px;
     margin: auto;
+    padding: 20px;
 }
 
-h1, h2 {
-    color: #333;
+/* 标题样式 */
+header {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
 }
 
+header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+/* 导航栏 */
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #2980b9;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* 内容布局 */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* 内容文字样式 */
+p, li {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* 列表样式 */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* 联系方式 */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* 按钮样式（用于项目链接或下载简历等） */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3498db;
+}
+
+/* 引用样式（用于展示发表论文） */
+blockquote {
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+    margin: 10px 0;
+    color: #555;
+    font-style: italic;
+}
+
+/* 响应式布局 */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav a {
+        margin: 0 10px;
+    }
+    .container {
+        padding: 15px;
+    }
 }
