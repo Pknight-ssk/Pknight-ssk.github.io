@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,14 +22,25 @@
     </nav>
 
     <!-- 页面内容 -->
-    <div class="container">
-        <h2>Fun</h2>
-        <img src="images/1.jpg" alt="棕头鸦雀" style="width: 100%; max-width: 600px;">
+    
+
+    <div class="image-gallery">
+        <!-- 用 Lightbox 打开大图 -->
+        <a href="images/1.jpg" data-lightbox="mygallery" data-title="棕头鸦雀">
+            <img src="images/1.jpg" alt="棕头鸦雀" class="thumbnail">
+        </a>
         <p>棕头鸦雀</p>
     </div>
 
     <footer>
         <p>Contact me: <a href="mailto:sunsk@iphy.ac.cn">sunsk@iphy.ac.cn</a></p>
     </footer>
+
+
+    <!-- 引入 Lightbox 的 JS 文件，放在 body 底部 CSS 文件：放在 <head> 标签内，这样可以确保页面在加载时就应用样式。
+    JS 文件：放在页面底部、</body> 标签之前，以确保在页面内容加载完成后再加载 JavaScript 文件。
+    这可以提高页面加载性能，避免阻塞 HTML 内容的渲染。-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 </body>
 </html>
